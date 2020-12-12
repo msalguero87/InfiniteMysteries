@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html{
+        height: 100%;
+      }
+       body{
+        background-color: rgb(63, 58, 40) !important;
+        font-family: 'Special Elite', cursive !important;
+        height: 100%;
+       }
+       body:hover{
+        cursor: url(icons/loupe.png), auto;
+       }
+       .card{
+         background-color: burlywood !important;
+         color: black !important;
+       }
+      .titled{
+        text-align: center;
+      }
+      .main {
+        height: 100%;
+        width: 100%;
+        display: table;
+      }
+      .wrapper {
+          display: table-cell;
+          height: 100%;
+          vertical-align: middle;
+      }
+        #welcome{
+          margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class = "main">
+      <div id="welcome" class="wrapper">
+        <div class="col-md-6 offset-md-3">
+          <div id="start" class="card" style="padding: 1rem;">
+            <div class="row titled">
+              <div class="col-md-12">
+                <h1>Infinite Mysteries</h1>
+                <img class="profile" src="/icons/envelope.png" />
+                <div >
+                  <p>In Infinite Mysteries you are a detective who solves procedurally generated unique cases using logic.</p>
+                  <div >
+                    <button onclick="selectUnit(0)" class="primary" >Find a Case</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="welcome" class="wrapper">
+        <div class="col-md-6 offset-md-3">
+          <div id="start" class="card" style="padding: 1rem;">
+            <div class="row titled">
+              <div class="col-md-12">
+                <h1>Infinite Mysteries</h1>
+                <img class="profile" src="/icons/envelope.png" />
+                <div >
+                  <p>In Infinite Mysteries you are a detective who solves procedurally generated unique cases using logic.</p>
+                  <div >
+                    <button onclick="startNewCase()" class="primary" >Find a Case</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 offset-md-3">
+          <div id="start" class="card" style="padding: 1rem;">
+            <div class="row titled">
+              <div class="col-md-12">
+                <h1>Mistery #1</h1>
+                <div class="col-md-6">
+                  <img class="profile" src="/icons/zoom.png" />
+                  <p>Review Case</p>
+                </div>
+                <div class="col-md-6">
+                  <img class="profile" src="/icons/search.png" />
+                  <p>Investigate Suspects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="/index.js"></script>
+  </body>
+</html>
